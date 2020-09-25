@@ -8,7 +8,7 @@ $(document).ready(() => {
 
 });
 function getMovies(searchText){
-  axios.get('http://www.omdbapi.com/?s=tt3896198&apikey=cda373ee'/+searchText)
+  axios.get('https://www.omdbapi.com/?apikey=cda373ee&s='+searchText)
   .then((response) => {
       console.log(response);
       let movies = response.data.Search;
@@ -44,9 +44,9 @@ return false;
 
 }
 function getMovie(){
-  let moveieId = sessionStorage.getItem('movieId');
+  let movieId = sessionStorage.getItem('movieId');
 
-  axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=cda373ee='/+movieId)
+  axios.get('https://www.omdbapi.com/?apikey=cda373ee&i='+movieId)
   .then((response) => {
       console.log(response);
        let movie = response.data;

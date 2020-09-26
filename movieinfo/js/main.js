@@ -52,7 +52,7 @@ function getMovie(){
        let movie = response.data;
 
        let output =`
-       <div> class="row">
+       <div class="row">
        <div class="col-md-4">
        <img src="${movie.Poster}" class="thumbnail">
        </div>

@@ -70,7 +70,7 @@ cursor: pointer;
       $("ul").sortable({axis:"x", containment:"#projects"});
       $("ol").sortable({axis:"y", containment:"#projects"});
 
-      $("input[type=checkbox]").click (function(){
+    $("#projects").on("click", "input[type=checkbox]", function(){
              $(this).closest("li").slideUp(function(){
                $(this).remove();
 
@@ -156,13 +156,13 @@ cursor: pointer;
 
         </ul>
           <ol id="personal">
-            <li><input type="Checkbox">Doctor appointment</li>
-            <li><input type="Checkbox">Call the plumber</li>
+            <li><input type="checkbox">Doctor appointment</li>
+            <li><input type="checkbox">Call the plumber</li>
         </ol>
             <ol id="Work">
-              <li><input type="Checkbox">Complete test case document</li>
-              <li><input type="Checkbox">Meet the project manager</li>
-							    <li><input type="Checkbox">Record Jquery video</li>
+              <li><input type="checkbox">Complete test case document</li>
+              <li><input type="checkbox">Meet the project manager</li>
+							    <li><input type="checkbox">Record Jquery video</li>
               </ol>
 
         </div>
@@ -176,4 +176,3 @@ cursor: pointer;
 	</div>
       </body>
       </html>
-
